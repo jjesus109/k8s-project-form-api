@@ -12,9 +12,7 @@ app = FastAPI()
 
 @app.on_event("startup")
 def on_startup():
-    print("Hholaaa")
     init_db()
-    print("Byee!")
     
     
 @app.get("/app/v1/forms/{form_id}", response_model=Form)
