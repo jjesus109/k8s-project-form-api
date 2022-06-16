@@ -16,6 +16,8 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "http://gsus-register",
+    "http://gsus-visualization",
 ]
 
 app.add_middleware(
